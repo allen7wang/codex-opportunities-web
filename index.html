@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="light">
+  <meta name="description" content="四个个人任务工具的可交互本地演示，用于用户访谈和需求验证。">
+  <title>个人任务实验室 · Workflow Lab</title>
+  <link rel="stylesheet" href="consumer-demo.css">
+  <script defer src="consumer-core.js"></script><script defer src="consumer-demo.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#workspace">跳至操作区</a>
+  <header class="topbar">
+    <a class="brand" href="index.html" aria-label="Workflow Lab 首页"><span class="brand-symbol" aria-hidden="true">w.</span><span>WORKFLOW<span class="brand-sub">LAB / 机会验证工作台</span></span></a>
+    <nav class="family-nav" aria-label="演示大类"><a class="selected" href="index.html" aria-current="page">个人任务 <span>C端</span></a><a href="b2b.html">企业流程 <span>B2B ↗</span></a></nav>
+    <button class="button small secondary" id="feedback-open">记录反馈 <span id="feedback-count">0</span></button>
+  </header>
+  <div class="page-shell">
+    <section class="hero" aria-labelledby="page-title">
+      <div><p class="eyebrow"><span class="green-dot"></span> INTERACTIVE DEMO <span class="version">v0.4</span></p><h1 id="page-title">一个具体任务，<span>一次价值验证。</span></h1><p class="hero-description">亲手修改输入，查看结果怎样变化。把“看起来有用”，变成可以讨论、可以验证的具体体验。</p></div>
+      <div class="hero-note"><span class="note-label">这次演示怎么用</span><div class="mini-flow"><b>01 <span>改输入</span></b><i>→</i><b>02 <span>看依据</span></b><i>→</i><b>03 <span>拿结果</span></b></div><p>本地处理 · 示例规则 · 刷新清空<br>没有真实支付，也不调用模型服务</p></div>
+    </section>
+    <div class="section-label"><span>选择一个个人任务</span><a href="https://github.com/allen7wang/codex-b2b-opportunities/blob/main/C端机会/系列文档/README.md">查看 BRD / MRD / PRD ↗</a></div>
+    <nav id="scenario-nav" class="scenario-nav" aria-label="C端演示场景"></nav>
+    <main id="workspace" tabindex="-1"></main>
+    <section class="research-strip"><div><span class="green-dot"></span><strong>下一步，听到真实反馈</strong><p>这一步替你省了什么？原来的工具能不能做到？</p></div><button class="button secondary" id="feedback-bottom">记下这次观察 ↗</button></section>
+    <footer><span>WORKFLOW LAB <i>/</i> 2026 · 需求验证原型</span><span>默认数据均为虚构 · 文件仅在当前页面处理 <a href="https://github.com/allen7wang/codex-b2b-opportunities/blob/main/DEMO_GUIDE.md">演示说明 ↗</a></span></footer>
+  </div>
+  <dialog id="feedback-dialog" aria-labelledby="feedback-title">
+    <form id="feedback-form"><div class="dialog-head"><div><p class="eyebrow">RESEARCH NOTES</p><h2 id="feedback-title">记录一次真实观察</h2></div><button type="button" class="icon-button" id="feedback-close" aria-label="关闭反馈窗口">×</button></div>
+    <p class="muted">仅保存在本页内存，不会发送。刷新前请下载记录。</p>
+    <label>当前方向<input id="feedback-scenario" readonly></label>
+    <label>体验后的判断<select id="feedback-verdict"><option value="needs-validation">还需要验证</option><option value="try">愿意继续试用</option><option value="pay-interest">表达了付费意向（非成交）</option><option value="alternative">现有工具已经足够</option></select></label>
+    <label>最有用或最卡住的一步<textarea id="feedback-note" rows="4" required maxlength="2000" placeholder="例如：能找到缺件，但我不想手动确认每个文件。"></textarea></label>
+    <label>愿意考虑的价格（元，可留空）<input id="feedback-price" type="number" min="0" max="100000" step="0.01" placeholder="这是意向，不记作收入"></label>
+    <div class="actions"><button class="button" type="submit">保存观察</button><button type="button" class="button secondary" id="feedback-download">下载全部反馈</button></div></form>
+  </dialog>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <noscript><p class="no-script">请启用 JavaScript 以使用本地交互演示。也可以阅读仓库里的产品文档。</p></noscript>
+</body>
+</html>

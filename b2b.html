@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>B2B 企业流程 · Workflow Lab</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="site-shell">
+    <header class="topbar">
+      <a class="brand" href="index.html" aria-label="返回演示工作台"><span class="brand-mark">W</span><span>WORKFLOW <small>LAB</small></span></a>
+      <div class="topbar-right"><a href="index.html">← C端验证工作台</a><span class="live-dot"></span><span>客户沟通演示版</span><span class="demo-pill">样例数据</span></div>
+    </header>
+
+    <section class="intro">
+      <div class="intro-copy">
+        <p class="eyebrow">FOUR FOCUSED WORKFLOWS · 2026</p>
+        <h1>把繁琐流程，变成<br><em>看得见的结果。</em></h1>
+        <p class="intro-lead">这是早期范围的本地样例，业务数据均为虚构。按钮只做模拟操作，不表示 v0.3 产品需求已经实现。可修改输入、查看异常或导出草稿，用来和客户判断哪一步值得继续验证。</p>
+      </div>
+      <div class="intro-aside"><strong>演示原则</strong><p>虚构样例，只供访谈讨论。每个结果都保留原始依据，须人工复核后才能用于真实业务。</p><a href="https://github.com/allen7wang/codex-b2b-opportunities/blob/main/SALES_KIT.md">查看宣讲与访谈材料 <span aria-hidden="true">↗</span></a><br><a href="https://github.com/allen7wang/codex-b2b-opportunities/blob/main/FEEDBACK_TEMPLATE.md">打开客户反馈记录模板 <span aria-hidden="true">↗</span></a></div>
+    </section>
+
+    <nav class="demo-nav" aria-label="选择演示场景">
+      <button type="button" data-tab="project" class="active"><span>01</span><b>验收证据到开票准备</b><small>项目型公司</small></button>
+      <button type="button" data-tab="tender"><span>02</span><b>单品类投标证据预检</b><small>设备供应商</small></button>
+      <button type="button" data-tab="quote"><span>03</span><b>产品族询价技术例外</b><small>工业零部件厂</small></button>
+      <button type="button" data-tab="reconcile"><span>04</span><b>ERP外物流账单异常</b><small>跨境卖家</small></button>
+    </nav>
+    <p class="message warn">早期页签曾用名为项目回款跟进、投标材料预检、工业询价转报价、跨境订单对账，现场请用上面的 v0.3 名称。</p>
+
+    <main id="demo-root" aria-live="polite"></main>
+    <footer class="footer"><span>WORKFLOW LAB · 早期范围本地样例 · 用于需求访谈</span><span>人工复核后再用于真实业务</span></footer>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
