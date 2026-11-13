@@ -1,21 +1,22 @@
 {
   "source_repository": "allen7wang/codex-b2b-opportunities",
-  "source_commit": "9cea44ef1fd8009a44b0e61231e9068664b6a4d0",
+  "source_commit": "3fe7f98b3bf11ec2759ecf38272c5ecdbada9e12",
   "base": "/codex-opportunities-web/",
   "backend_required": false,
   "files": {
     ".nojekyll": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "agent-results.html": "30a51f478b19514a97b779bde4208850f4b1546767d7765196b9a0d47ae57f65",
     "app.js": "df38819f1bf0e35c8a8f75863a57efb449c12ea038dabed9aeac83d4f8109dc0",
     "assets/cover-workflow.png": "9d9573f63286137e46984e67abc5599ff40bfca9aa9c2c69ee077865b5121723",
     "assets/ecommerce.png": "8ea4cbc7a5cde4c509d807ae021226d87016dcf12c4e498eb91d8bd827b7ac4c",
     "assets/manufacturing.png": "5e59e4ad4824f077d09de78262daf50537e2070c8c1ef26d2bbe03bfa16d6408",
     "assets/project.png": "6b530b85b36debc84e0d85a65be0e91fff0f682fd9b20cd9469c9fe0b2d4b323",
     "assets/tender.png": "0e51da27ae5c3b77c98c30b5be4341638ce25b0c8686c769c3f285d1a61c1407",
-    "b2b.html": "e9de8cfd7892d27f5bbb338c26200abd7c7620f66ccc07cf104cfce62f6030bb",
+    "b2b.html": "14cddbd8c7e0bfe8e6bcc7f9f55279c8b8f1171664fb463641893e9bb5ff37fb",
     "consumer-core.js": "88c3b624924abea1bcb3acdf55457a49b09a0fa0d1a231565dcf48c32cff40b6",
     "consumer-demo.css": "dc0c16935217a53b8d2bada9d26c32822390127334844ac3108b001830163cc0",
     "consumer-demo.js": "08ddfca921e897b956bc6aa12d60aeb8a418848593d3b27bfe07aa78bb97102a",
-    "index.html": "97686157354e6b8e71ebbd58bedfc49e5428632ed04d961494f28486dc7091d4",
+    "index.html": "71dec044ed9c142e556f843aff096d00fda05130cc294c832753744cb69d1dd6",
     "styles.css": "c7b0cbb03593aacf5ce286c7ee71e0065998f4bef85558ecda271bfc360de5b3"
   }
 }

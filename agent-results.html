@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="description" content="2026-11-13 市面调研：用 Agent 做 B 端、且有公开结果的案例。数字是别人的公开说法，不是本站收入。">
+  <title>市面结果 · 机会验证工作台</title>
+  <link rel="stylesheet" href="consumer-demo.css">
+  <style>
+    .note{max-width:760px;color:var(--muted);font-size:15px;line-height:1.7}
+    .sheet{background:var(--white);border:1px solid var(--line);border-radius:14px;overflow:auto;box-shadow:var(--shadow)}
+    table{width:100%;border-collapse:collapse;font-size:13px;min-width:720px}
+    th,td{padding:12px 14px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line)}
+    th{font-size:11px;letter-spacing:.04em;color:var(--muted);background:var(--soft)}
+    td a{font-weight:650}
+    .tag{display:inline-block;min-width:1.4em;padding:1px 6px;border-radius:6px;background:var(--soft);font-weight:700}
+    .warn{margin:18px 0 0;padding:14px 16px;border-left:3px solid var(--orange);background:var(--orange-bg);border-radius:0 10px 10px 0}
+    .sources{display:grid;gap:8px;margin:8px 0 28px;padding:0;list-style:none}
+    .sources li{font-size:13px}
+    h2{font-size:18px;margin:28px 0 10px}
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#results">跳至结果表</a>
+  <header class="topbar">
+    <a class="brand" href="index.html" aria-label="Workflow Lab 首页"><span class="brand-symbol" aria-hidden="true">w.</span><span>WORKFLOW<span class="brand-sub">LAB / 机会验证工作台</span></span></a>
+    <nav class="family-nav" aria-label="演示大类">
+      <a href="index.html">个人任务 <span>C端</span></a>
+      <a href="b2b.html">企业流程 <span>B2B ↗</span></a>
+      <a class="selected" href="agent-results.html" aria-current="page">市面结果 <span>调研</span></a>
+    </nav>
+  </header>
+  <div class="page-shell">
+    <section class="hero" aria-labelledby="page-title">
+      <div>
+        <p class="eyebrow"><span class="green-dot"></span> MARKET SCAN <span class="version">2026-11-13</span></p>
+        <h1 id="page-title">有公开结果的，<span>都是具体岗位。</span></h1>
+        <p class="hero-description note">用 Agent 做 B 端、并且本轮打开了原文的案例。数字是公司自述、投资人转述或媒体调查，私人公司数字未经审计。不是本站的客户、营收或预测。</p>
+      </div>
+    </section>
+    <div class="section-label"><span id="results">只收录打开过正文的材料</span></div>
+    <div class="sheet">
+      <table>
+        <thead><tr><th>公司</th><th>卖的岗位</th><th>公开结果</th><th>等级</th><th>日期</th></tr></thead>
+        <tbody>
+          <tr><td><a href="https://sierra.ai/blog/our-customers-ambition-is-accelerating-our-growth">Sierra</a></td><td>企业客户对话，可延伸到跨天数周的收入型任务</td><td>自述越过 $400M ARR；当季增加超过 $150M；约一半 Fortune 50；按结果收费</td><td><span class="tag">A</span></td><td>2026-10-30</td></tr>
+          <tr><td><a href="https://www.eliseai.com/blog/eliseai-hits-200m-arr-after-five-consecutive-years-of-100-growth-across-housing-and-healthcare">EliseAI</a></td><td>住房租赁/运维，以及医疗预约与接诊沟通</td><td>自述越过 $200M ARR，连续第五年同比翻倍；称覆盖美国六分之一公寓</td><td><span class="tag">A</span></td><td>2026-06-10</td></tr>
+          <tr><td><a href="https://www.harvey.ai/blog/harvey-raises-dollar550m-at-a-dollar155b-valuation-to-help-legal-teams-own-their-intelligence">Harvey</a></td><td>法律工作流</td><td>自述 80% Am Law 100、五家 Fortune 10；融资 $550M、估值 $15.5B。这篇融资稿没有写 ARR</td><td><span class="tag">A</span></td><td>2026-09-09</td></tr>
+          <tr><td><a href="https://www.otpp.com/en-ca/about-us/news-and-insights/2026/teachers-venture-growth-invests-in-harvey-ai-legal-platform/">Harvey</a></td><td>同上</td><td>投资人写：3000 多家客户、70 多个国家、越过 $400M ARR</td><td><span class="tag">B</span></td><td>2026-09-24</td></tr>
+          <tr><td><a href="https://decagon.ai/blog/series-d-announcement">Decagon</a></td><td>企业客服 Agent</td><td>融资 $250M，估值 $4.5B；称新增 100 多家企业客户。公告没有 ARR</td><td><span class="tag">A</span></td><td>2026-01-27</td></tr>
+          <tr><td><a href="https://www.ithome.com/1/015/130.htm">实在智能</a></td><td>没有 API 的系统上的数字员工</td><td>厂商数据：单项人工成本 36 万降至 6 万；另一客户年省近 188 万。不是营收公告</td><td><span class="tag">D</span></td><td>2026-10-20</td></tr>
+          <tr><td><a href="https://techcrunch.com/2025/03/24/a16z-and-benchmark-backed-11x-has-been-claiming-customers-it-doesnt-have/">11x</a></td><td>AI SDR</td><td>反例：非客户标识；员工举例称 $14M 合同额里，过试用的大约 $3M</td><td><span class="tag">C</span></td><td>2025-03-24</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="warn">A 是公司公告。B 是投资人转述，公司同期融资稿没有同一句。C 是媒体调查。D 是媒体转述的厂商案例。估值和融资不是结果。一人公司用编程 Agent 做出可核验收入的全文，这轮没有打开，所以不在表里。</p>
+    <h2>怎么用这张表</h2>
+    <p class="note">能抄的是切口：买家已经在为这个岗位花钱，成功标准对方能核对，系统范围窄到一次试点能交付。不能抄的是 Fortune 50 的销售周期，也不能把表里的数字当成自己的试点收益。</p>
+    <h2>原文</h2>
+    <ul class="sources">
+      <li><a href="https://sierra.ai/blog/our-customers-ambition-is-accelerating-our-growth">Sierra，2026-10-30</a></li>
+      <li><a href="https://sierra.ai/blog/year-two-in-review">Sierra，2026-02-06</a></li>
+      <li><a href="https://www.harvey.ai/blog/harvey-raises-dollar550m-at-a-dollar155b-valuation-to-help-legal-teams-own-their-intelligence">Harvey 融资稿，2026-09-09</a></li>
+      <li><a href="https://www.otpp.com/en-ca/about-us/news-and-insights/2026/teachers-venture-growth-invests-in-harvey-ai-legal-platform/">Ontario Teachers'，2026-09-24</a></li>
+      <li><a href="https://www.eliseai.com/blog/eliseai-hits-200m-arr-after-five-consecutive-years-of-100-growth-across-housing-and-healthcare">EliseAI，2026-06-10</a></li>
+      <li><a href="https://decagon.ai/blog/series-d-announcement">Decagon Series D，2026-01-27</a></li>
+      <li><a href="https://techcrunch.com/2025/03/24/a16z-and-benchmark-backed-11x-has-been-claiming-customers-it-doesnt-have/">TechCrunch，2025-03-24</a> · <a href="https://techcrunch.com/2025/05/05/11x-ceo-hasan-sukkar-steps-down">2025-05-05</a></li>
+      <li><a href="https://www.ithome.com/1/015/130.htm">IT之家，2026-10-20</a></li>
+    </ul>
+    <footer><span>WORKFLOW LAB <i>/</i> 市面调研 · 不是本站收入</span><span>默认演示数据仍是虚构 <a href="index.html">返回工作台</a></span></footer>
+  </div>
+</body>
+</html>
